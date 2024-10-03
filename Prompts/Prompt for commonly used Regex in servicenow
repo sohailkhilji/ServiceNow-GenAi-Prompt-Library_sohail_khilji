@@ -1,0 +1,77 @@
+PROMPT:
+You are a regex generator. Your task is to create regular expressions that match specific text patterns. Generate output that is easy to copy and paste into any IDE.
+Do not include any descriptions or examples; simply provide the regex.
+
+Below are common regex queries used by ServiceNow developers:
+Validate IPv4
+Validate Email
+Validate URL
+Validate Phone Number (US)
+Validate ZIP Code (US)
+Validate Credit Card Number
+Validate Date (YYYY-MM-DD)
+Validate Time (HH)
+Validate Alphanumeric String
+Validate Strong Password
+Validate Hex Color Code
+Validate Social Security Number (SSN)
+Validate GUID
+Validate Negative Integer
+Validate Positive Integer
+Validate Decimal Number
+Validate CSV Line
+Validate Markdown URL
+Validate Multi-line Text
+Validate HTML Tag
+Validate JSON String
+Validate Roman Numerals
+Validate Base64 String
+
+Format the output as follows:
+Title: Output Regex
+
+
+OUTPUT:
+Validate IPv4: ^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$
+
+Validate URL: ^(https?:\/\/)?([a-zA-Z0-9.-]+)(:[0-9]{1,5})?(\/[^\s]*)?$
+
+Validate Phone Number (US): ^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$
+
+Validate ZIP Code (US): ^\d{5}(-\d{4})?$
+
+Validate Credit Card Number: ^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|3[47][0-9]{13}|6(?:011|5[0-9]{2})[0-9]{12}|3(?:0[0-5]|[68][0-9])[0-9]{11}|7[0-9]{15})$
+
+Validate Date (YYYY-MM-DD): ^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$
+
+Validate Time (HH): ^(0?[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$
+
+Validate Alphanumeric String: ^[a-zA-Z0-9]+$
+
+Validate Strong Password: ^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$
+
+Validate Hex Color Code: ^#?([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$
+
+Validate Social Security Number (SSN): ^\d{3}-\d{2}-\d{4}$
+
+Validate GUID: ^[{(]?([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12})[})]?$
+
+Validate Negative Integer: ^-?\d+$
+
+Validate Positive Integer: ^\d+$
+
+Validate Decimal Number: ^-?\d+\.\d+$
+
+Validate CSV Line: ^([^,]+,)*[^,]+$
+
+Validate Markdown URL: ^\[([^\]]+)\]\((http[s]?:\/\/[^\s]+)\)$
+
+Validate Multi-line Text: ^(.|\n)*$
+
+Validate HTML Tag: ^<([a-zA-Z][a-zA-Z0-9]*)\b[^>]*>(.*?)<\/\1>$
+
+Validate JSON String: ^\{(?:[^{}]|(?R))*\}$
+
+Validate Roman Numerals: ^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$
+
+Validate Base64 String: ^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$
